@@ -1,20 +1,56 @@
-{% extends 'base.html.twig' %}
+{% extends 'layout/default.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Home
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/Acs/Documents/Symfony/info_locale/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/Acs/Documents/Symfony/info_locale/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
-    </ul>
-</div>
+	{% block header %}
+		<!-- Header-->
+		<header>
+			<!-- Banner-->
+			<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+			<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+			<div class="jumbotron jumbotron-main" id="home">
+				<div id="particles-js">
+					<canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"></canvas>
+				</div>
+				<!-- /.particles div -->
+				<div class="container center-vertically-holder">
+					<div class="center-vertically">
+						<div class="col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 text-center">
+							<h1 class="scaleReveal" data-sr-id="46" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+								About
+								<strong>us &amp; feel</strong>.
+							</h1>
+							<hr class="bottomReveal" data-sr-id="1" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+							<a href="#ideology" data-id="ideology" class="scroll-link">
+								<div class="scroll-indicator rotateBottomReveal" data-sr-id="40" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1) rotateX(0); opacity: 1;transform: translateY(0) scale(1) rotateX(0); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+									<span class="ion-mouse"></span><br>
+									<span class="ion-android-arrow-down arrow-scroll-indicator"></span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	{% endblock %}
+	{% block main %}
+		<!--main-->
+		<main>
+			<div class="container px-4 px-lg-5 my-5">
+				<div class="row gx-4 gx-lg-5 justify-content-center">
+					<div class="col-md-10 col-lg-8 col-xl-7">
+						<p class="type-article type-article">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit lobortis turpis at euismod. Vivamus vestibulum rhoncus velit in accumsan. Integer iaculis lectus vel est tristique, quis pulvinar dui ornare. Suspendisse mattis nulla id massa iaculis lobortis. Sed eget urna accumsan, imperdiet nisl at, semper justo. Vestibulum viverra, turpis ac sagittis convallis, nisl libero sollicitudin eros, eget bibendum lectus nisi sed lacus. Pellentesque pretium, sapien in lobortis ultricies, diam eros venenatis nulla, a malesuada turpis purus eu arcu. Etiam a velit massa. Suspendisse potenti. Duis est purus, consectetur ut orci eget, vehicula laoreet massa. Phasellus rhoncus at augue et porta. Nulla sed ullamcorper ipsum. Nunc dictum at ligula eu bibendum. Maecenas et nibh elit. Morbi venenatis, sem id porttitor imperdiet, nisl risus rutrum neque, eget commodo tortor tellus at sem.</p>
+						<p class="type-article type-article">Vestibulum tempor enim metus, id tincidunt nulla tempus sed. Nulla iaculis augue sapien, vel maximus mauris ultricies at. Aliquam vel suscipit augue. Duis malesuada odio eget mi eleifend pretium. Maecenas a tortor quam. Nullam sed dignissim nisl, eu lacinia ante. Integer a massa venenatis, pellentesque urna eu, imperdiet nunc.</p>
+						<p class="type-article type-article">Curabitur nibh lorem, elementum auctor lacus in, dignissim sollicitudin mi. Donec ullamcorper at nibh et tempor. Aliquam dui orci, blandit eu magna non, condimentum iaculis mi. Donec suscipit, mi vitae tempor aliquet, nulla nibh eleifend sem, ullamcorper commodo arcu odio vel erat. Vestibulum viverra lobortis ipsum non faucibus. Integer eget consequat ex. Nulla facilisis malesuada faucibus. Integer rhoncus laoreet sapien viverra commodo. Duis vel viverra augue.</p>
+						<p class="type-article type-article">Sed pulvinar neque eget rutrum dictum. Donec laoreet molestie augue, faucibus luctus diam. Nulla sem tellus, maximus sit amet mauris ut, dignissim cursus nulla. Nullam non malesuada lorem. Mauris quis justo quam. Phasellus fermentum faucibus suscipit. Aliquam arcu tortor, faucibus sit amet condimentum vitae, vulputate lobortis magna. Aenean orci tellus, vehicula a est euismod, maximus aliquam elit. Curabitur luctus id velit et vehicula. Nulla tincidunt libero ac lectus suscipit commodo. Aenean vel felis nec ligula feugiat pulvinar at nec magna. Nullam bibendum orci et diam faucibus fermentum. Donec ullamcorper diam a ligula faucibus pellentesque.
+						</p>
+					</div>
+				</div>
+			</div>
+		</main>
+	{% endblock %}
 {% endblock %}

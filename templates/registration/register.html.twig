@@ -1,0 +1,32 @@
+{% extends 'layout/default.html.twig' %}
+
+{% block title %}Register
+{% endblock %}
+
+{% block body %}
+
+	<section class="p-0 bg-img cover-background" style="background-image: url(https://bootdey.com/img/Content/bg1.jpg);">
+		<div class="container-fluid d-flex flex-column">
+			<div class="row align-items-center justify-content-center min-vh-100">
+				<div class="col-md-9 col-lg-6 my-5">
+					<div class="text-center error-page">
+						<h1 class="mb-4 text-white">Register</h1>
+						{{ form_start(registrationForm) }}
+                        <div class="form-floating">
+						{{ form_row(registrationForm.email) }}
+                        </div>
+                        <div class="form-floating">
+						{{ form_row(registrationForm.plainPassword, {label: 'Password'}) }}
+                        </div>
+						{{ form_row(registrationForm.agreeTerms) }}
+
+						<button type="submit" class="btn btn-info btn-lg me-sm-2 mb-2 mb-sm-0 mt-3">Register</button>
+						{{ form_end(registrationForm) }}
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

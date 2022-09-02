@@ -1,0 +1,55 @@
+{% extends 'layout/default.html.twig' %}
+
+{% block title %}Nous Articles
+{% endblock %}
+
+{% block body %}
+	{% block header %}
+		<!-- Header-->
+		<header>
+			<!-- Banner-->
+			<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+			<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+			<div class="jumbotron jumbotron-main" id="home">
+				<div id="particles-js">
+					<canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"></canvas>
+				</div>
+				<!-- /.particles div -->
+				<div class="container center-vertically-holder">
+					<div class="center-vertically">
+						<div class="col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 text-center">
+							<h1 class="scaleReveal" data-sr-id="46" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+								Nous
+								<strong>Articles &amp; read</strong>
+							</h1>
+							<hr class="bottomReveal" data-sr-id="1" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+							<a href="#ideology" data-id="ideology" class="scroll-link">
+								<div class="scroll-indicator rotateBottomReveal" data-sr-id="40" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1) rotateX(0); opacity: 1;transform: translateY(0) scale(1) rotateX(0); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+									<span class="ion-mouse"></span><br>
+									<span class="ion-android-arrow-down arrow-scroll-indicator"></span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	{% endblock %}
+
+	{% block main %}
+		<div class="container px-4 px-lg-5 my-5">
+			<div class="row gx-4 gx-lg-5 justify-content-center">
+				<div class="col-md-10 col-lg-8 col-xl-7">
+					{% for article in articles %}
+						<div class="post-preview article mb-5">
+							<a href="/article/{{article.id}}">
+								<h2 class="post-subtitle text-secondary hover">{{article.title|raw}}</h2>
+							</a>
+							<p class="post-subtitle type-article">{{article.excerpt|raw}}</p>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	{% endblock %}
+{% endblock %}

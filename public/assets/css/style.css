@@ -3,19 +3,14 @@
     padding: 0;
 }
 
-body {
-    margin-top: 20px;
-    font-family: 'Lato', sans-serif !important;
-}
-
 /* navbar */
 .navbar{
     background-color: #f5eefc;
 }
 
 .navbar-nav, .nav-link.active{
-color: #f57200 !important;
-font-size: 25px!important;
+color: #0dcaf0 !important;
+font-size: 18px!important;
 }
 
 /* =Jumbotron Main
@@ -96,3 +91,90 @@ font-size: 25px!important;
 .parallax-window {
     background: transparent;
 }
+
+
+/* form */
+
+body{margin-top:20px;
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif !important;}
+
+.cover-background {
+    position: relative !important;
+    background-size: cover !important;
+    overflow: hidden !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+.p-0 {
+    padding: 0!important;
+}
+section {
+    padding: 120px 0;
+    overflow: hidden;
+    background: #fff;
+}
+
+.error-page {
+    background-color: #BABABA4A;
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(234,234,235,0.2);
+    padding: 80px 20px;
+}
+.text-center {
+    text-align: center!important;
+}
+.error-page h1 {
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 600;
+}
+.text-secondary {
+    color: #15395A !important;
+}
+.mb-4 {
+    margin-bottom: 1.5rem!important;
+}
+
+.textLogged{
+    color: #ffffff;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px rgba(38,17,10,0.39);
+}
+
+.color{
+    color: #0dcaf0 !important;
+}
+
+/* footer */
+
+footer, .footer{
+    background-color: #f5eefc !important;
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+  
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  /* main */
+  .type-article{
+    text-align: justify;
+  }
+
+  a{
+    text-decoration: none !important;
+  }
+
+  .hover:hover{
+    color: #0dcaf0 !important;
+  }
