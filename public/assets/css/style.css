@@ -13,6 +13,11 @@ color: #0dcaf0 !important;
 font-size: 18px!important;
 }
 
+.rounded-pill{
+    background-color: #0dcaf0 !important;
+    height: ;
+}
+
 /* =Jumbotron Main
 -------------------------------------------------------------- */
 .jumbotron.jumbotron-main {
