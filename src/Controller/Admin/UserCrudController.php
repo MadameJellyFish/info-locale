@@ -20,7 +20,7 @@ class UserCrudController extends AbstractCrudController
     {
         return [
             yield EmailField::new('email'),
-            yield TextField::new('password'),
+            // yield TextField::new('password'),
             yield ArrayField::new('roles'),
             // yield TextField::new('title'),
             // TextEditorField::new('description'),
